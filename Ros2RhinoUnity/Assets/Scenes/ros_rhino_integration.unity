@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 74753786}
   - component: {fileID: 74753789}
   - component: {fileID: 74753788}
+  - component: {fileID: 74753790}
   - component: {fileID: 74753787}
   m_Layer: 0
   m_Name: Plugins
@@ -515,7 +516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74753784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 972d0a14e9b6927a3ac0006e867dcf29, type: 3}
   m_Name: 
@@ -558,6 +559,21 @@ MonoBehaviour:
   stiffness: 10000
   damping: 100
   forceLimit: 1000
+--- !u!114 &74753790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74753784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495db457db214d449ac3b3944345d951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cmdVelTopic: cmd_vel
+  maxLinearSpeed: 2
+  maxAngularSpeed: 1
 --- !u!1 &138288979
 GameObject:
   m_ObjectHideFlags: 8
@@ -4000,6 +4016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583552198}
   - component: {fileID: 1583552197}
+  - component: {fileID: 1583552199}
   m_Layer: 0
   m_Name: my_robot
   m_TagString: robot
@@ -4040,6 +4057,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1583552199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583552195}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f903e6326dc20e41b601ab0bbe9cbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheel1: {fileID: 388857128}
+  wheel2: {fileID: 1211224532}
+  mode: 1
+  maxLinearSpeed: 2
+  maxRotationalSpeed: 1
+  wheelRadius: 0.033
+  trackWidth: 0.1478
+  forceLimit: 10
+  damping: 10
+  ROSTimeout: 0.5
 --- !u!1001 &1587030969
 PrefabInstance:
   m_ObjectHideFlags: 0
