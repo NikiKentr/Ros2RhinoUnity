@@ -34,7 +34,7 @@ public class KeyboardControl4 : MonoBehaviour
         targetLinearSpeed = Input.GetAxisRaw("Vertical") * speed;
         targetAngularSpeed = -Input.GetAxisRaw("Horizontal") * angularSpeed;
 
-        // Log the position of the robot's base (optional for debugging)
+        // Log the position of the robot's base (debugging)
         Vector3 basePosition = robotBase.transform.position;
         Quaternion baseRotation = robotBase.transform.rotation; // Get the rotation of the robot's base
         Debug.Log($"Robot Base Position: {basePosition}");
@@ -63,16 +63,16 @@ public class KeyboardControl4 : MonoBehaviour
                     sec = (int)Time.time,
                     nanosec = (uint)((Time.time - Mathf.Floor(Time.time)) * 1e9)
                 },
-                frame_id = "base_link" // Or any other frame you are using
+                frame_id = "base_link" 
             },
             pose = new PoseMsg
             {
-                position = new PointMsg { x = basePosition.x, y = basePosition.y, z = basePosition.z },
+                position = new PointMsg { x = basePosition.x, y = basePosition.z, z = 0.0 },
                 orientation = new QuaternionMsg
                 {
-                    x = baseRotation.x,
-                    y = baseRotation.y,
-                    z = baseRotation.z,
+                    x = 0.0,
+                    y = 0.0,
+                    z = baseRotation.y,
                     w = baseRotation.w
                 }
             }
