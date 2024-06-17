@@ -249,7 +249,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: 0.0648}
+  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: 0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -474,7 +474,6 @@ GameObject:
   - component: {fileID: 74753789}
   - component: {fileID: 74753788}
   - component: {fileID: 74753790}
-  - component: {fileID: 74753787}
   m_Layer: 0
   m_Name: Plugins
   m_TagString: Untagged
@@ -509,22 +508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae53a797b5479c43b9a3aeac7e35e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &74753787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74753784}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 972d0a14e9b6927a3ac0006e867dcf29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wheelController: {fileID: 74753788}
-  speed: 1.5
-  angularSpeed: 1.5
-  point1: {fileID: 1143388242}
 --- !u!114 &74753788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,12 +551,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 74753784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495db457db214d449ac3b3944345d951, type: 3}
+  m_Script: {fileID: 11500000, guid: 79d4f3723fe72654182c4cfba15c60b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cmdVelTopic: cmd_vel
-  maxLinearSpeed: 2
-  maxAngularSpeed: 1
+  wheelController: {fileID: 74753788}
+  speed: 1.5
+  angularSpeed: 1.5
+  point1: {fileID: 1143388242}
+  robotBase: {fileID: 1538323872}
+  poseTopic: unity/robot_pose
 --- !u!1 &138288979
 GameObject:
   m_ObjectHideFlags: 8
@@ -3005,8 +2991,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265203388}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.5, y: 0.046, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.046, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3014,7 +3000,7 @@ Transform:
   - {fileID: 1387010288}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273389054
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,7 +4034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583552195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.046, z: 0}
+  m_LocalPosition: {x: 1, y: 0.046, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4682,7 +4668,7 @@ GameObject:
   - component: {fileID: 1914686575}
   - component: {fileID: 1914686574}
   - component: {fileID: 1914686573}
-  - component: {fileID: 1914686572}
+  - component: {fileID: 1914686576}
   m_Layer: 0
   m_Name: Plugins
   m_TagString: Untagged
@@ -4705,22 +4691,6 @@ Transform:
   m_Father: {fileID: 1265203390}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1914686572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914686570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2c87757a7beea4d818b2930af8ed62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wheelController: {fileID: 1914686573}
-  speed: 1.5
-  angularSpeed: 1.5
-  point2: {fileID: 717372687}
 --- !u!114 &1914686573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4767,6 +4737,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae53a797b5479c43b9a3aeac7e35e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1914686576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914686570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc62732a1a65ebe4a92eacd8d7569260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelController: {fileID: 1914686573}
+  speed: 1.5
+  angularSpeed: 1.5
+  point2: {fileID: 717372687}
+  robotBase: {fileID: 1572840861}
+  poseTopic: unity/robot2_pose
 --- !u!1 &1917361290
 GameObject:
   m_ObjectHideFlags: 8
@@ -5035,7 +5023,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046959432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 040ef9d1c0b5e384eafb80aa57cdd70b, type: 3}
   m_Name: 
@@ -5236,7 +5224,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: -0.0648}
+  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: -0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -5463,7 +5451,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.028
-  m_ParentAnchorPosition: {x: -0.09003997, y: -0.014116999, z: 0.000056}
+  m_ParentAnchorPosition: {x: -0.09004, y: -0.014116999, z: 0.000056}
   m_ParentAnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}

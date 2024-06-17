@@ -352,6 +352,8 @@
 "Assets/Scripts/ArticulationWheelController.cs"
 "Assets/Scripts/KeyboardControl.cs"
 "Assets/Scripts/KeyboardControl1.cs"
+"Assets/Scripts/KeyboardControl4.cs"
+"Assets/Scripts/KeyboardControl5.cs"
 "Assets/Scripts/NewKeyboardControl.cs"
 -langversion:9.0
 
