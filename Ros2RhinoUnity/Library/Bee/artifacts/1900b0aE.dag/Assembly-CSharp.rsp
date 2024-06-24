@@ -359,6 +359,8 @@
 "Assets/Scripts/Robot1/ROS2PosePublisherRobot1.cs"
 "Assets/Scripts/Robot2/KeyboardControlRobot2.cs"
 "Assets/Scripts/Robot2/ROS2PosePublisherRobot2.cs"
+"Assets/Scripts/ROSConnectionManager.cs"
+"Assets/Scripts/ROSPosePublisher.cs"
 -langversion:9.0
 
 /deterministic

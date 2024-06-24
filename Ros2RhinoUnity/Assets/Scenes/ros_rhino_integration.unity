@@ -795,7 +795,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388857128
 GameObject:
@@ -1224,6 +1224,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2768594953994305791, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481697318382876723, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_Name
       value: ROSConnectionPrefab_Robot1
@@ -1234,7 +1242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_RosIPAddress
@@ -1250,7 +1258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1323,8 +1331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7acef0b79454c9b4dae3f8139bc4ba77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RosIPAddress: 192.168.56.103
-  m_RosPort: 10001
+  m_RosIPAddress: 192.168.43.33
+  m_RosPort: 10000
   m_ConnectOnStart: 1
   m_KeepaliveTime: 1
   m_NetworkTimeoutSeconds: 2
@@ -1346,7 +1354,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &637993051
 GameObject:
@@ -3125,7 +3133,7 @@ Transform:
   - {fileID: 1914686571}
   - {fileID: 1387010288}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1273389054
 GameObject:
@@ -3277,12 +3285,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2768594953994305791, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481697318382876723, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_Name
       value: ROSConnectionPrefab_Robot2
       objectReference: {fileID: 0}
     - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
@@ -3303,7 +3323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3886,6 +3906,7 @@ GameObject:
   - component: {fileID: 1538323875}
   - component: {fileID: 1538323874}
   - component: {fileID: 1538323878}
+  - component: {fileID: 1538323879}
   m_Layer: 0
   m_Name: base_link
   m_TagString: Untagged
@@ -4019,13 +4040,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538323872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f839405478a6f55448f3ad050ce176fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   robotBase: {fileID: 1538323873}
   rosA: {fileID: 328940620}
+  poseTopic: unity/robot_pose
+--- !u!114 &1538323879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538323872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e92fb0c1bf159d47b89327cfc271c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1538323873}
+  rosConnection: {fileID: 328940620}
   poseTopic: unity/robot_pose
 --- !u!1 &1572840861
 GameObject:
@@ -4042,6 +4078,7 @@ GameObject:
   - component: {fileID: 1572840863}
   - component: {fileID: 1572840867}
   - component: {fileID: 1572840868}
+  - component: {fileID: 1572840869}
   m_Layer: 0
   m_Name: base_link
   m_TagString: Untagged
@@ -4190,13 +4227,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572840861}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6bd52e2329216e4aa6c8b82d4ac03a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   robotBase: {fileID: 1572840862}
   rosB: {fileID: 528472001}
+  poseTopic: unity/robot2_pose
+--- !u!114 &1572840869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572840861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e92fb0c1bf159d47b89327cfc271c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1572840862}
+  rosConnection: {fileID: 528472001}
   poseTopic: unity/robot2_pose
 --- !u!1 &1574854740
 GameObject:
@@ -4292,7 +4344,7 @@ Transform:
   - {fileID: 74753785}
   - {fileID: 1488274876}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1583552199
 MonoBehaviour:
@@ -4907,6 +4959,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   geometryType: 3
+--- !u!1 &1841573141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841573143}
+  - component: {fileID: 1841573142}
+  m_Layer: 0
+  m_Name: RosManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1841573142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841573141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bc8a4759069ac49bc2bbacf94411e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rosA: {fileID: 328940620}
+  rosB: {fileID: 528472001}
+--- !u!4 &1841573143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841573141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05255729, y: -1.6417326, z: -2.014184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914686570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5293,7 +5391,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047169729
 GameObject:
