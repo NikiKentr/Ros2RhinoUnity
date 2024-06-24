@@ -249,7 +249,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: 0.0648}
+  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: 0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -551,15 +551,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 74753784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d4f3723fe72654182c4cfba15c60b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 44a6e689e65ce6e49959b6966e4a5078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 74753788}
-  speed: 1.5
-  angularSpeed: 1.5
+  speed: 0.5
+  angularSpeed: 0.5
   point1: {fileID: 1143388242}
-  robotBase: {fileID: 1538323872}
-  poseTopic: unity/robot_pose
 --- !u!1 &138288979
 GameObject:
   m_ObjectHideFlags: 8
@@ -745,6 +743,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4875897206379906123, guid: e96ffe801cf7b8045930332197b9d1a7, type: 3}
   m_PrefabInstance: {fileID: 207401214}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &328940619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328940621}
+  - component: {fileID: 328940620}
+  m_Layer: 0
+  m_Name: RosConnectionRobot1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &328940620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328940619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7acef0b79454c9b4dae3f8139bc4ba77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RosIPAddress: 192.168.56.102
+  m_RosPort: 10000
+  m_ConnectOnStart: 1
+  m_KeepaliveTime: 1
+  m_NetworkTimeoutSeconds: 2
+  m_SleepTimeSeconds: 0.01
+  m_ShowHUD: 1
+  m_TFTopics:
+  - /tf
+  listenForTFMessages: 0
+--- !u!4 &328940621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328940619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388857128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,11 +1226,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_Name
-      value: ROSConnectionPrefab
+      value: ROSConnectionPrefab_Robot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_RosIPAddress
+      value: 192.168.56.102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_ConnectOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: listenForTFMessages
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1222,6 +1294,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+--- !u!1 &528472000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 528472002}
+  - component: {fileID: 528472001}
+  m_Layer: 0
+  m_Name: RosConnectionRobot2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &528472001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528472000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7acef0b79454c9b4dae3f8139bc4ba77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RosIPAddress: 192.168.56.103
+  m_RosPort: 10001
+  m_ConnectOnStart: 1
+  m_KeepaliveTime: 1
+  m_NetworkTimeoutSeconds: 2
+  m_SleepTimeSeconds: 0.01
+  m_ShowHUD: 1
+  m_TFTopics:
+  - /tf
+  listenForTFMessages: 0
+--- !u!4 &528472002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528472000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05255729, y: -1.6417326, z: -2.014184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &637993051
 GameObject:
   m_ObjectHideFlags: 8
@@ -1524,7 +1650,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2244,8 +2370,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.0015207165, y: -0.9882224, z: 0.15270463, w: -0.009777126}
-  m_LocalPosition: {x: -0.1607408, y: 1.0406154, z: 2.5771828}
+  m_LocalRotation: {x: -0.053486668, y: -0.9454034, z: 0.24978578, w: -0.20238273}
+  m_LocalPosition: {x: -0.92909503, y: 0.7814283, z: 1.5818487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2991,16 +3117,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265203388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.046, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2, y: 0.046, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1914686571}
   - {fileID: 1387010288}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1273389054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3270,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   geometryType: 2
+--- !u!1001 &1342987268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_Name
+      value: ROSConnectionPrefab_Robot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800489204444784751, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_RosPort
+      value: 10001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_RosIPAddress
+      value: 192.168.56.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_ConnectOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887288846012438795, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: listenForTFMessages
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170503836212699356, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b36b2e644152c4c8bac0d66e1502a28, type: 3}
 --- !u!1 &1375199551
 GameObject:
   m_ObjectHideFlags: 8
@@ -3682,6 +3885,7 @@ GameObject:
   - component: {fileID: 1538323876}
   - component: {fileID: 1538323875}
   - component: {fileID: 1538323874}
+  - component: {fileID: 1538323878}
   m_Layer: 0
   m_Name: base_link
   m_TagString: Untagged
@@ -3808,6 +4012,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBaseLink: 0
+--- !u!114 &1538323878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538323872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f839405478a6f55448f3ad050ce176fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1538323873}
+  rosA: {fileID: 328940620}
+  poseTopic: unity/robot_pose
 --- !u!1 &1572840861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,6 +4040,8 @@ GameObject:
   - component: {fileID: 1572840865}
   - component: {fileID: 1572840864}
   - component: {fileID: 1572840863}
+  - component: {fileID: 1572840867}
+  - component: {fileID: 1572840868}
   m_Layer: 0
   m_Name: base_link
   m_TagString: Untagged
@@ -3947,6 +4168,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBaseLink: 0
+--- !u!114 &1572840867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572840861}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bd52e2329216e4aa6c8b82d4ac03a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1572840862}
+  rosB: {fileID: 0}
+  poseTopic: unity/robot2_pose
+--- !u!114 &1572840868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572840861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bd52e2329216e4aa6c8b82d4ac03a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1572840862}
+  rosB: {fileID: 528472001}
+  poseTopic: unity/robot2_pose
 --- !u!1 &1574854740
 GameObject:
   m_ObjectHideFlags: 8
@@ -4034,14 +4285,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583552195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.046, z: 0}
+  m_LocalPosition: {x: 2, y: 0.046, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 74753785}
   - {fileID: 1488274876}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1583552199
 MonoBehaviour:
@@ -4058,7 +4309,7 @@ MonoBehaviour:
   wheel1: {fileID: 388857128}
   wheel2: {fileID: 1211224532}
   mode: 1
-  maxLinearSpeed: 2
+  maxLinearSpeed: 1
   maxRotationalSpeed: 1
   wheelRadius: 0.033
   trackWidth: 0.1478
@@ -4746,15 +4997,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1914686570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc62732a1a65ebe4a92eacd8d7569260, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cef8e40b8b01274aaca07b0f5913052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 1914686573}
-  speed: 1.5
-  angularSpeed: 1.5
+  speed: 0.5
+  angularSpeed: 0.5
   point2: {fileID: 717372687}
-  robotBase: {fileID: 1572840861}
-  poseTopic: unity/robot2_pose
 --- !u!1 &1917361290
 GameObject:
   m_ObjectHideFlags: 8
@@ -5044,7 +5293,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047169729
 GameObject:
@@ -5224,7 +5473,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: -0.0648}
+  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: -0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -5451,7 +5700,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.028
-  m_ParentAnchorPosition: {x: -0.09004, y: -0.014116999, z: 0.000056}
+  m_ParentAnchorPosition: {x: -0.09003997, y: -0.014116999, z: 0.000056}
   m_ParentAnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
