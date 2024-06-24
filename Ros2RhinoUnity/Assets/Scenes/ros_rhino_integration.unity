@@ -473,7 +473,8 @@ GameObject:
   - component: {fileID: 74753786}
   - component: {fileID: 74753789}
   - component: {fileID: 74753788}
-  - component: {fileID: 74753790}
+  - component: {fileID: 74753792}
+  - component: {fileID: 74753791}
   m_Layer: 0
   m_Name: Plugins
   m_TagString: Untagged
@@ -542,7 +543,23 @@ MonoBehaviour:
   stiffness: 10000
   damping: 100
   forceLimit: 1000
---- !u!114 &74753790
+--- !u!114 &74753791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74753784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343851cf7f50c7842a533b0b247f0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1538323873}
+  rosConnection: {fileID: 328940620}
+  odometryTopic: /odom1
+  publishInterval: 0.5
+--- !u!114 &74753792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -555,8 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 74753788}
-  speed: 0.5
-  angularSpeed: 0.5
+  speed: 1.5
+  angularSpeed: 1.5
   point1: {fileID: 1143388242}
 --- !u!1 &138288979
 GameObject:
@@ -2378,8 +2395,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.053486668, y: -0.9454034, z: 0.24978578, w: -0.20238273}
-  m_LocalPosition: {x: -0.92909503, y: 0.7814283, z: 1.5818487}
+  m_LocalRotation: {x: -0.0002694931, y: -0.9574361, z: 0.288644, w: -0.0008494407}
+  m_LocalPosition: {x: -0.45473757, y: 2.2367134, z: 2.907547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4063,6 +4080,7 @@ MonoBehaviour:
   robotBase: {fileID: 1538323873}
   rosConnection: {fileID: 328940620}
   poseTopic: unity/robot_pose
+  publishInterval: 0.5
 --- !u!1 &1572840861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,6 +4268,7 @@ MonoBehaviour:
   robotBase: {fileID: 1572840862}
   rosConnection: {fileID: 528472001}
   poseTopic: unity/robot2_pose
+  publishInterval: 0.5
 --- !u!1 &1574854740
 GameObject:
   m_ObjectHideFlags: 8
@@ -5018,6 +5037,7 @@ GameObject:
   - component: {fileID: 1914686574}
   - component: {fileID: 1914686573}
   - component: {fileID: 1914686576}
+  - component: {fileID: 1914686577}
   m_Layer: 0
   m_Name: Plugins
   m_TagString: Untagged
@@ -5099,9 +5119,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 1914686573}
-  speed: 0.5
-  angularSpeed: 0.5
+  speed: 1.5
+  angularSpeed: 1.5
   point2: {fileID: 717372687}
+--- !u!114 &1914686577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914686570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343851cf7f50c7842a533b0b247f0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBase: {fileID: 1572840862}
+  rosConnection: {fileID: 528472001}
+  odometryTopic: /odom2
+  publishInterval: 0.5
 --- !u!1 &1917361290
 GameObject:
   m_ObjectHideFlags: 8
