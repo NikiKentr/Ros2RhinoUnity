@@ -93,12 +93,12 @@ public class ROSOdometryPublisher : MonoBehaviour
             {
                 pose = new PoseMsg
                 {
-                    position = new PointMsg { x = basePosition.x, y = basePosition.y, z = basePosition.z },
+                    position = new PointMsg { x = basePosition.x, y = basePosition.z, z = 0.0 },
                     orientation = new QuaternionMsg
                     {
-                        x = baseRotation.x,
-                        y = baseRotation.y,
-                        z = baseRotation.z,
+                        x = 0.0,
+                        y = 0.0,
+                        z = baseRotation.y,
                         w = baseRotation.w
                     }
                 },
