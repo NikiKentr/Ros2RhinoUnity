@@ -352,6 +352,7 @@
 "Assets/Scripts/ArticulationWheelController.cs"
 "Assets/Scripts/KeyboardControlScripts/KeyboardControlRobot1.cs"
 "Assets/Scripts/KeyboardControlScripts/KeyboardControlRobot2.cs"
+"Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/OLD SCRIPTS/KeyboardControl.cs"
 "Assets/Scripts/OLD SCRIPTS/KeyboardControl1.cs"
 "Assets/Scripts/OLD SCRIPTS/KeyboardControl4.cs"
