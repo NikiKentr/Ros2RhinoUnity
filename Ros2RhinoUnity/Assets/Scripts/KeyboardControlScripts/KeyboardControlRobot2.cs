@@ -6,8 +6,8 @@ public class KeyboardControlRobot2 : MonoBehaviour
 {
     public ArticulationWheelController wheelController;
 
-    public float speed = 1.5f;
-    public float angularSpeed = 1.5f;
+    public float speed = 1.57f;
+    public float angularSpeed = 5.24f;
     public float targetLinearSpeed { get; private set; }
     public float targetAngularSpeed { get; private set; }
 
