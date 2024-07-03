@@ -572,8 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 74753788}
-  speed: 1.5
-  angularSpeed: 1.5
+  speed: 1.57
+  angularSpeed: 5.24
   point1: {fileID: 1143388242}
 --- !u!1 &138288979
 GameObject:
@@ -895,7 +895,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: 0.0648}
+  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: 0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -2558,7 +2558,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.028
-  m_ParentAnchorPosition: {x: -0.09003997, y: -0.014116999, z: 0.000056}
+  m_ParentAnchorPosition: {x: -0.09004, y: -0.014116999, z: 0.000056}
   m_ParentAnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
@@ -2950,7 +2950,7 @@ ArticulationBody:
   m_Enabled: 1
   serializedVersion: 3
   m_Mass: 0.029
-  m_ParentAnchorPosition: {x: 0.0007760525, y: -0.013124999, z: -0.0648}
+  m_ParentAnchorPosition: {x: 0.000776, y: -0.013124999, z: -0.0648}
   m_ParentAnchorRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
@@ -5119,8 +5119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelController: {fileID: 1914686573}
-  speed: 1.5
-  angularSpeed: 1.5
+  speed: 1.57
+  angularSpeed: 5.24
   point2: {fileID: 717372687}
 --- !u!114 &1914686577
 MonoBehaviour:
