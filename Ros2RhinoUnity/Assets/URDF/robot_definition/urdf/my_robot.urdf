@@ -13,14 +13,14 @@
     <link name="base_link">
         <visual>
             <geometry>
-                <mesh filename="package://robot_definition/meshes/bodyD.stl" scale="1 1 1"/>
+                <mesh filename="package://robot_definition/meshes/nbody4Nf.stl" scale="1 1 1"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://robot_definition/meshes/bodyD.stl" scale="1 1 1"/>
+                <mesh filename="package://robot_definition/meshes/nbody4Nf.stl" scale="1 1 1"/>
             </geometry>
         </collision>
         <inertial>
