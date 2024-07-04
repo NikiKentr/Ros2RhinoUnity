@@ -22,9 +22,12 @@ public class ArticulationWheelController : MonoBehaviour
 
     void Update() {}
 
-    public void SetRobotVelocity(float targetLinearSpeed, float targetAngularSpeed)
+    public void MoveAgent(float[] actions)
     {
-        // Stop the wheel if target velocity is 0
+        float targetLinearSpeed = actions[0]; // linear speed
+        float targetAngularSpeed = actions[1]; // angular speed
+
+        // Stop the wheels if target velocities are zero
         if (targetLinearSpeed == 0 && targetAngularSpeed == 0)
         {
             StopWheel(leftWheel);
@@ -32,14 +35,16 @@ public class ArticulationWheelController : MonoBehaviour
         }
         else
         {
-            // Convert from linear x and angular z velocity to wheel speed
-            vRight = targetAngularSpeed*(wheelTrackLength/2) + targetLinearSpeed;
-            vLeft = -targetAngularSpeed*(wheelTrackLength/2) + targetLinearSpeed;
+            // Convert linear and angular velocities to wheel speeds
+            vRight = targetAngularSpeed * (wheelTrackLength / 2) + targetLinearSpeed;
+            vLeft = -targetAngularSpeed * (wheelTrackLength / 2) + targetLinearSpeed;
 
+            // Set wheel velocities
             SetWheelVelocity(leftWheel, vLeft / wheelRadius * Mathf.Rad2Deg);
             SetWheelVelocity(rightWheel, vRight / wheelRadius * Mathf.Rad2Deg);
         }
     }
+
 
     private void SetWheelVelocity(ArticulationBody wheel, float jointVelocity)
     {
@@ -50,9 +55,8 @@ public class ArticulationWheelController : MonoBehaviour
 
     private void StopWheel(ArticulationBody wheel)
     {
-        // Set desired angle as current angle to stop the wheel
         ArticulationDrive drive = wheel.xDrive;
-        drive.target = wheel.jointPosition[0] * Mathf.Rad2Deg;
+        drive.target = wheel.jointPosition[0] * Mathf.Rad2Deg; // Maintain current angle
         wheel.xDrive = drive;
     }
 }

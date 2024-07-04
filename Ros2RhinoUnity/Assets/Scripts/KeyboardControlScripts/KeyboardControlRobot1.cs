@@ -29,7 +29,7 @@ public class KeyboardControlRobot1 : MonoBehaviour
 
     void FixedUpdate()
     {
-        wheelController.SetRobotVelocity(targetLinearSpeed, targetAngularSpeed);
+        wheelController.MoveAgent(new float[] { targetLinearSpeed, targetAngularSpeed });
     }
 }
 
