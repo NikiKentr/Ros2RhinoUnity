@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="my_robot">
     <material name="grey">
-        <color rgba="0.7 0.7 0.7 1"/>    
+        <color rgba="0 0 0 1"/>    
     </material>
 
     <material name="white">
@@ -13,14 +13,14 @@
     <link name="base_link">
         <visual>
             <geometry>
-                <mesh filename="package://robot_definition/meshes/nbody4Nf.stl" scale="1 1 1"/>
+                <mesh filename="package://robot_definition/meshes/bodyF.stl" scale="1 1 1"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://robot_definition/meshes/nbody4Nf.stl" scale="1 1 1"/>
+                <mesh filename="package://robot_definition/meshes/bodyF.stl" scale="1 1 1"/>
             </geometry>
         </collision>
         <inertial>
@@ -106,6 +106,54 @@
         </inertial>
     </link>
 
+      <link name="caster_wheel_front">
+    <visual>
+        <geometry>
+            <sphere radius="0.006"/> 
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <material name="grey" />
+    </visual>
+    <collision>
+        <geometry>
+            <sphere radius="0.006"/> 
+        </geometry>
+    </collision>
+    <inertial>
+        <mass value="0.00086"/>
+        <inertia ixx="3.42525e-12" 
+                 ixy="-1.1574e-15" 
+                 ixz="2.5714e-16"
+                 iyy="3.42478e-12" 
+                 iyz="0"
+                 izz="6.2555e-12"/>
+    </inertial>
+</link>
+
+<link name="caster_wheel_back">
+    <visual>
+        <geometry>
+            <sphere radius="0.006"/> 
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <material name="grey" />
+    </visual>
+    <collision>
+        <geometry>
+            <sphere radius="0.006"/> 
+        </geometry>
+    </collision>
+    <inertial>
+        <mass value="0.00086"/>
+        <inertia ixx="3.42525e-12" 
+                 ixy="-1.1574e-15" 
+                 ixz="2.5714e-16"
+                 iyy="3.42478e-12" 
+                 iyz="0"
+                 izz="6.2555e-12"/>
+    </inertial>
+</link>
+
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint" />
         <child link="base_link" />
@@ -132,5 +180,19 @@
         <origin xyz="0.000056 0.09004 -0.014117" rpy="0 0 0" />
         <axis xyz="1 0 0" />
         <limit lower="0" upper="1.57" effort="0" velocity="0" />
+    </joint>
+
+     <joint name="front_caster_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="caster_wheel_front" />
+        <origin xyz="0 0.044373 -0.040125" rpy="0 0 0" />
+        <axis xyz="-1 0 0" />
+    </joint>
+
+    <joint name="back_caster_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="caster_wheel_back" />
+        <origin xyz="0 -0.051640 -0.040125" rpy="0 0 0" />
+        <axis xyz="-1 0 0" />
     </joint>
 </robot>
