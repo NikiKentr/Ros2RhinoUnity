@@ -1009,7 +1009,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216103303}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f267292687ff4f942983983aff678a69, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1597,7 +1597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &408562075
 Transform:
   m_ObjectHideFlags: 0
@@ -2284,7 +2284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &619877356
 Transform:
   m_ObjectHideFlags: 0
@@ -3673,8 +3673,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0000008940698, y: 0.70326984, z: -0.710923, w: -0.000026062135}
-  m_LocalPosition: {x: -2.0100782, y: 4.2336636, z: 0.029741213}
+  m_LocalRotation: {x: 0.025864262, y: 0.96580344, z: -0.23512806, w: 0.10615838}
+  m_LocalPosition: {x: -2.0827534, y: 1.0915093, z: 2.0522454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6831,7 +6831,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687574090}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f267292687ff4f942983983aff678a69, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
