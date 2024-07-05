@@ -29,10 +29,10 @@ public class ROSOdometryPublisher : MonoBehaviour
 
         // Try to find the KeyboardControlRobot1 or KeyboardControlRobot2 script attached to the same GameObject
         keyboardControl = GetComponent<KeyboardControlRobot1>(); // Try to find KeyboardControlRobot1
-        if (keyboardControl == null)
-        {
-            keyboardControl = GetComponent<KeyboardControlRobot2>(); // Try to find KeyboardControlRobot2
-        }
+        //if (keyboardControl == null)
+        //{
+        //    keyboardControl = GetComponent<KeyboardControlRobot2>(); // Try to find KeyboardControlRobot2
+        //}
 
         if (keyboardControl == null)
         {

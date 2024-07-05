@@ -1,13 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-///     This script converts linear velocity and 
-///     angular velocity to joint velocities for
-///     differential drive robot.
-/// </summary>
 public class ArticulationWheelController : MonoBehaviour
 {
     public ArticulationBody leftWheel;
@@ -18,13 +12,16 @@ public class ArticulationWheelController : MonoBehaviour
     private float vRight;
     private float vLeft;
 
-    void Start() {}
+    void Start() { }
 
-    void Update() {}
+    void Update() { }
 
-    public void SetRobotVelocity(float targetLinearSpeed, float targetAngularSpeed)
+    public void MoveAgent(float[] actions)
     {
-        // Stop the wheel if target velocity is 0
+        float targetLinearSpeed = actions[0]; // linear speed
+        float targetAngularSpeed = actions[1]; // angular speed
+
+        // Stop the wheels if target velocities are zero
         if (targetLinearSpeed == 0 && targetAngularSpeed == 0)
         {
             StopWheel(leftWheel);
@@ -32,10 +29,11 @@ public class ArticulationWheelController : MonoBehaviour
         }
         else
         {
-            // Convert from linear x and angular z velocity to wheel speed
-            vRight = targetAngularSpeed*(wheelTrackLength/2) + targetLinearSpeed;
-            vLeft = -targetAngularSpeed*(wheelTrackLength/2) + targetLinearSpeed;
+            // Convert linear and angular velocities to wheel speeds
+            vRight = targetAngularSpeed * (wheelTrackLength / 2) + targetLinearSpeed;
+            vLeft = -targetAngularSpeed * (wheelTrackLength / 2) + targetLinearSpeed;
 
+            // Set wheel velocities
             SetWheelVelocity(leftWheel, vLeft / wheelRadius * Mathf.Rad2Deg);
             SetWheelVelocity(rightWheel, vRight / wheelRadius * Mathf.Rad2Deg);
         }
@@ -50,9 +48,8 @@ public class ArticulationWheelController : MonoBehaviour
 
     private void StopWheel(ArticulationBody wheel)
     {
-        // Set desired angle as current angle to stop the wheel
         ArticulationDrive drive = wheel.xDrive;
-        drive.target = wheel.jointPosition[0] * Mathf.Rad2Deg;
+        drive.target = wheel.jointPosition[0] * Mathf.Rad2Deg; // Maintain current angle
         wheel.xDrive = drive;
     }
 }
