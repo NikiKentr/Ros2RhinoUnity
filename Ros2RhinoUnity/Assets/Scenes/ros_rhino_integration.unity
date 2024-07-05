@@ -590,19 +590,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 10
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 0
+      m_NumContinuousActions: 2
       BranchSizes: 01000000
-    VectorActionSize: 01000000
+    VectorActionSize: 
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorType: 1
+  m_BehaviorName: RobotBehavior
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -4227,9 +4227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f839405478a6f55448f3ad050ce176fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotBase: {fileID: 1538323873}
-  rosA: {fileID: 328940620}
-  poseTopic: unity/robot_pose
 --- !u!114 &1538323879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4400,9 +4397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bd52e2329216e4aa6c8b82d4ac03a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotBase: {fileID: 1572840862}
-  rosB: {fileID: 0}
-  poseTopic: unity/robot2_pose
 --- !u!114 &1572840868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,9 +4409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bd52e2329216e4aa6c8b82d4ac03a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotBase: {fileID: 1572840862}
-  rosB: {fileID: 528472001}
-  poseTopic: unity/robot2_pose
 --- !u!114 &1572840869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5283,12 +5274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cef8e40b8b01274aaca07b0f5913052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheelController: {fileID: 1914686573}
-  speed: 1.57
-  angularSpeed: 5.24
-  <targetLinearSpeed>k__BackingField: 0
-  <targetAngularSpeed>k__BackingField: 0
-  point2: {fileID: 717372687}
 --- !u!114 &1914686577
 MonoBehaviour:
   m_ObjectHideFlags: 0
