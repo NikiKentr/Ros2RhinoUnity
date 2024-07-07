@@ -4,33 +4,28 @@ using UnityEngine;
 
 public class TargetController : MonoBehaviour
 {
-    public Transform targetArea; // Reference to the target area (plane or quad)
-    public Vector3 areaBoundsMin; // Minimum bounds for the area position
-    public Vector3 areaBoundsMax; // Maximum bounds for the area position
-
-    private Vector3 targetAreaScale;
+    public Transform targetPoint; // Reference to the target point
+    public Vector3 areaBoundsMin; // Minimum bounds for the target position
+    public Vector3 areaBoundsMax; // Maximum bounds for the target position
 
     void Start()
     {
-        // Store the initial scale of the target area
-        targetAreaScale = targetArea.localScale;
         ResetTarget();
     }
 
     public void ResetTarget()
     {
-        // Randomize the target area position within bounds
+        // Randomize the target point position within bounds
         float randomX = Random.Range(areaBoundsMin.x, areaBoundsMax.x);
         float randomZ = Random.Range(areaBoundsMin.z, areaBoundsMax.z);
-        targetArea.position = new Vector3(randomX, targetArea.position.y, randomZ);
+        targetPoint.position = new Vector3(randomX, targetPoint.position.y, randomZ);
     }
 
-    public bool IsRobotInTargetArea(Vector3 robotPosition)
+    public bool IsRobotAtTargetPoint(Vector3 robotPosition, float threshold = 0.5f)
     {
-        Vector3 targetMin = targetArea.position - (targetAreaScale / 2);
-        Vector3 targetMax = targetArea.position + (targetAreaScale / 2);
-
-        return robotPosition.x > targetMin.x && robotPosition.x < targetMax.x &&
-               robotPosition.z > targetMin.z && robotPosition.z < targetMax.z;
+        // Check if the robot is within the threshold distance to the target point
+        float distance = Vector3.Distance(robotPosition, targetPoint.position);
+        return distance <= threshold;
     }
+
 }

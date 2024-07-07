@@ -2,11 +2,13 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
+using System.Collections.Generic;
 
 public class RobotAgent : Agent
 {
     public ArticulationWheelController wheelController;
     public TargetController targetController;
+
 
     private Vector3 initialRobotPosition;
     private Quaternion initialRobotRotation;
@@ -19,51 +21,47 @@ public class RobotAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        // reset the robot and the target area
+        // Reset the robot and the target point
         transform.position = initialRobotPosition;
         transform.rotation = initialRobotRotation;
         targetController.ResetTarget();
     }
 
-    public override void CollectObservations(VectorSensor sensor)
-    {
-        // add robot's position and orientation
-        sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(transform.localRotation);
-
-        // add target area position relative to the robot
-        Vector3 relativeTargetPosition = targetController.targetArea.position - transform.position;
-        sensor.AddObservation(relativeTargetPosition);
-
-       
-    }
-
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        // continuous actions for linear and angular speeds
+        // Continuous actions for linear and angular speeds
         float targetLinearSpeed = actionBuffers.ContinuousActions[0];
         float targetAngularSpeed = actionBuffers.ContinuousActions[1];
 
         // Move the robot using the wheel controller
         wheelController.MoveAgent(new float[] { targetLinearSpeed, targetAngularSpeed });
 
-        // reward based on the distance to the target area
-        float distanceToTarget = Vector3.Distance(transform.position, targetController.targetArea.position);
+        // Reward based on the distance to the target point
+        float distanceToTarget = Vector3.Distance(transform.position, targetController.targetPoint.position);
         AddReward(-distanceToTarget / 10f); // Normalize distance reward
 
-        // small penalty for taking time (to encourage efficiency)
+        // Small penalty for taking time (to encourage efficiency)
         AddReward(-0.01f);
 
-        // reward if robot is within the target area
-        if (targetController.IsRobotInTargetArea(transform.position))
-        {
-            AddReward(1f);
-            EndEpisode();
-        }
+        // Reward if robot is at the target point
+        //if (targetController.IsRobotAtTargetPoint(transform.position))
+        //{
+        //    AddReward(1f);
+        //    EndEpisode();
+       // }
 
-        // end episode if robot tips over or goes out of bounds
+        // End episode if robot tips over or goes out of bounds
         if (transform.position.y < initialRobotPosition.y - 2)
         {
+            EndEpisode();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("TargetPoint") == true)
+        {
+            AddReward(1.0f);
             EndEpisode();
         }
     }

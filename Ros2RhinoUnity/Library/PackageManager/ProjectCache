@@ -5,42 +5,42 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638557851875878041
-    m_Hash: 147739055
+      ticks: 638558772841264868
+    m_Hash: 1661447726
   m_LockFileStatus:
     m_FilePath: C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638557851875908853
-    m_Hash: 2909842191
+      ticks: 638558772841594958
+    m_Hash: 2962678349
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus:
-  - m_FilePath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents/package.json
+  - m_FilePath: C:\Users\nikik\ml-agents\com.unity.ml-agents/package.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638556973329235124
-    m_Hash: 2903901163
-  - m_FilePath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents
+      ticks: 638558733049245955
+    m_Hash: 3663355726
+  - m_FilePath: C:\Users\nikik\ml-agents\com.unity.ml-agents
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
       ticks: 0
     m_Hash: 0
-  - m_FilePath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents.extensions/package.json
+  - m_FilePath: C:\Users\nikik\ml-agents\com.unity.ml-agents.extensions/package.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638556973297678592
-    m_Hash: 615094184
-  - m_FilePath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents.extensions
+      ticks: 638558733045275488
+    m_Hash: 1922573267
+  - m_FilePath: C:\Users\nikik\ml-agents\com.unity.ml-agents.extensions
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -432,12 +432,12 @@ m_ResolvedPackages:
     version: 1.2.5
     nextVersion: 
     recommendedVersion: 
-- packageId: com.unity.ml-agents@file:C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents
+- packageId: com.unity.ml-agents@file:C:\Users\nikik\ml-agents\com.unity.ml-agents
   testable: 0
   isDirectDependency: 1
-  version: 2.2.1-exp.1
+  version: 2.3.0-exp.3
   source: 4
-  resolvedPath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents
+  resolvedPath: C:\Users\nikik\ml-agents\com.unity.ml-agents
   assetPath: Packages/com.unity.ml-agents
   name: com.unity.ml-agents
   displayName: ML Agents
@@ -495,14 +495,14 @@ m_ResolvedPackages:
     verified: 2.0.1
   dependencies:
   - name: com.unity.barracuda
-    version: 2.3.1-preview
+    version: 3.0.0
   - name: com.unity.modules.imageconversion
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.barracuda
-    version: 2.3.1-preview
+    version: 3.0.0
   - name: com.unity.burst
     version: 1.8.11
   - name: com.unity.mathematics
@@ -534,12 +534,12 @@ m_ResolvedPackages:
     version: 2.0.0
     nextVersion: 
     recommendedVersion: 
-- packageId: com.unity.ml-agents.extensions@file:C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents.extensions
+- packageId: com.unity.ml-agents.extensions@file:C:\Users\nikik\ml-agents\com.unity.ml-agents.extensions
   testable: 0
   isDirectDependency: 1
   version: 0.6.1-preview
   source: 4
-  resolvedPath: C:\Users\nikik\Documents\ml-agents\ml-agents-release_19\com.unity.ml-agents.extensions
+  resolvedPath: C:\Users\nikik\ml-agents\com.unity.ml-agents.extensions
   assetPath: Packages/com.unity.ml-agents.extensions
   name: com.unity.ml-agents.extensions
   displayName: ML Agents Extensions
@@ -558,14 +558,14 @@ m_ResolvedPackages:
     verified: 
   dependencies:
   - name: com.unity.ml-agents
-    version: 2.2.1-exp.1
+    version: 2.3.0-exp.3
   - name: com.unity.modules.physics
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ml-agents
-    version: 2.2.1-exp.1
+    version: 2.3.0-exp.3
   - name: com.unity.barracuda
-    version: 2.3.1-preview
+    version: 3.0.0
   - name: com.unity.burst
     version: 1.8.11
   - name: com.unity.mathematics
@@ -3501,12 +3501,12 @@ m_ResolvedPackages:
     version: 1.0.0
     nextVersion: 
     recommendedVersion: 
-- packageId: com.unity.barracuda@2.3.1-preview
+- packageId: com.unity.barracuda@3.0.0
   testable: 0
   isDirectDependency: 0
-  version: 2.3.1-preview
+  version: 3.0.0
   source: 1
-  resolvedPath: C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\PackageCache\com.unity.barracuda@2.3.1-preview
+  resolvedPath: C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\PackageCache\com.unity.barracuda@3.0.0
   assetPath: Packages/com.unity.barracuda
   name: com.unity.barracuda
   displayName: Barracuda
@@ -3600,13 +3600,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637709307880000000
+  datePublishedTicks: 637817245160000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git
-    revision: d35576b27abf3d0457010f642c17d58ef2836f7f
+    revision: 26d48d6d408d03dc87eab5c945a97d2e155877d2
     path: 
   unityLifecycle:
     version: 2.0.0
