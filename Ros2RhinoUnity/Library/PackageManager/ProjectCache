@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638514622331240845
-    m_Hash: 1422248234
+      ticks: 638561395493544061
+    m_Hash: 478360870
   m_LockFileStatus:
     m_FilePath: C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638514622564805842
-    m_Hash: 4229439566
+      ticks: 638561395493544061
+    m_Hash: 3315378332
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -115,8 +115,10 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
     compatible:
     - 2.3.1
+    - 2.4.3
     verified: 2.3.1
   dependencies: []
   resolvedDependencies: []
@@ -221,9 +223,11 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
+    - 3.0.31
     compatible:
     - 3.0.28
-    verified: 3.0.28
+    - 3.0.31
+    verified: 3.0.31
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
