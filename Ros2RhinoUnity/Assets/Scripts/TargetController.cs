@@ -10,16 +10,16 @@ public class TargetController : MonoBehaviour
 
     void Start()
     {
-        ResetTarget();
+       // ResetTarget();
     }
 
-    public void ResetTarget()
-    {
+    //public void ResetTarget()
+    //{
         // Randomize the target point position within bounds
-        float randomX = Random.Range(areaBoundsMin.x, areaBoundsMax.x);
-        float randomZ = Random.Range(areaBoundsMin.z, areaBoundsMax.z);
-        targetPoint.position = new Vector3(randomX, targetPoint.position.y, randomZ);
-    }
+    //    float randomX = Random.Range(areaBoundsMin.x, areaBoundsMax.x);
+    //    float randomZ = Random.Range(areaBoundsMin.z, areaBoundsMax.z);
+     //   targetPoint.position = new Vector3(randomX, targetPoint.position.y, randomZ);
+    //}
 
     public bool IsRobotAtTargetPoint(Vector3 robotPosition, float threshold = 0.5f)
     {
