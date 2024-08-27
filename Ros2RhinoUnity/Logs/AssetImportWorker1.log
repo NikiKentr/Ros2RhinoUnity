@@ -15,7 +15,7 @@ C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59399
+59123
 Successfully changed project path to: C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity
 C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/nikik/Documents/GitHub/Ros2RhinoUnity/Ros2RhinoUnity
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [61320] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1825441364 [EditorId] 1825441364 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KHBJ25) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [42864] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 660038770 [EditorId] 660038770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KHBJ25) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [61320] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1825441364 [EditorId] 1825441364 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KHBJ25) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [42864] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 660038770 [EditorId] 660038770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KHBJ25) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 30.12 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 47.85 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.37f1 (3b6005ad5ad6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/Resources/UnitySubsystems
@@ -60,131 +60,241 @@ Initialize engine version: 2021.3.37f1 (3b6005ad5ad6)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28e1)
-    Vendor:   NVIDIA
-    VRAM:     5921 MB
-    Driver:   31.0.15.5212
+    Renderer: Intel(R) UHD Graphics (ID=0xa78b)
+    Vendor:   Intel
+    VRAM:     8034 MB
+    Driver:   31.0.101.5382
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.37f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.005052 seconds.
+Registered in 0.004667 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 27.10 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 37.02 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.489 seconds
+- Completed reload, in  0.787 seconds
 Domain Reload Profiling:
-	ReloadAssembly (490ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (788ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (324ms)
-			LoadAssemblies (92ms)
+		EndReloadAssembly (554ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (83ms)
+			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (191ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (333ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (27ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (101ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007517 seconds.
+Registered in 0.004280 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001B4B92D6D80 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-000001A3382293D0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BA945C60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+Symbol file data-000001A3382349E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B9304760 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001A338C7B8F0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BAC27820 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001A338C9B100 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B9304760 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001A3382349E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B9310B60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
+Symbol file data-000001A3382349E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8E1FCB0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000001A3382349E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\vhacd.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB3F3B40 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001A338D3F750 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8547010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000001A3385A7020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BA945C60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000001A338D3F750 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BA945C60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
+Symbol file data-000001A33618C020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B859C4F0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001A338867030 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB26B530 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001A338D4BF60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB26B530 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file data-000001A338D4BF60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BA945C60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-000001A336194030 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A3388D9E60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Messages.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A336424D60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338D4BF60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.MessageGeneration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A3382349E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338D4BF60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 20.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 48.13 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.110 seconds
+- Completed reload, in  1.756 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1111ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (1758ms)
+		BeginReloadAssembly (180ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (931ms)
-			LoadAssemblies (112ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1471ms)
+			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (158ms)
+			SetupTypeCache (252ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (633ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (981ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (20ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (527ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (48ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (735ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1743 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (46.6 KB). Loaded Objects now: 2197.
+Memory consumption went from 75.7 MB to 75.6 MB.
+Total: 3.533400 ms (FindLiveObjects: 0.298800 ms CreateObjectMapping: 0.078600 ms MarkObjects: 3.023400 ms  DeleteObjects: 0.130500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004264 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001A3387AD030 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A339C28010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A336958020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A3382E8010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A339CFE3E0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338245F60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338245F60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\vhacd.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33880D040 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A336C2A020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33BC89350 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33BE2DE90 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33A27C040 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338245F60 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33837D060 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33C2B7020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33A09B250 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Messages.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33A09B250 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338CA8C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.MessageGeneration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33BE2DE90 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33A051420 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.546 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1547ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (810ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (670ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1736 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (46.4 KB). Loaded Objects now: 2192.
-Memory consumption went from 75.4 MB to 75.3 MB.
-Total: 2.049800 ms (FindLiveObjects: 0.093700 ms CreateObjectMapping: 0.026200 ms MarkObjects: 1.874100 ms  DeleteObjects: 0.055200 ms)
+Unloading 25 unused Assets / (21.9 KB). Loaded Objects now: 2200.
+Memory consumption went from 75.2 MB to 75.2 MB.
+Total: 3.424200 ms (FindLiveObjects: 0.157900 ms CreateObjectMapping: 0.046700 ms MarkObjects: 3.186300 ms  DeleteObjects: 0.031800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -202,169 +312,89 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002095 seconds.
+Registered in 0.004014 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001B4B85A6370 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-000001A33CC36BD0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B908E2F0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+Symbol file data-000001A33CC77C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B85A6370 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001A33A456030 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB2DC010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001A33D212030 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BC3C9020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001A339BD1040 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8ED8650 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
+Symbol file data-000001A33659F850 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BC8BA010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000001A33659F850 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\vhacd.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BE2AA670 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001A33CB8D940 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.UrdfImporter.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8470080 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000001A335F75FF0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BEF84630 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000001A33CD91DF0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB2F16D0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
+Symbol file data-000001A33CBD7C80 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BEC52890 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001A336E36010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BE339010 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001A33659F850 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BEC52890 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file data-000001A33659F850 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB2F16D0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-000001A33C2B7020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33CF40020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.Messages.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33CF40020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A338CA8C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Robotics.ROSTCPConnector.MessageGeneration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33CC77C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001A33C2F8170 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.980 seconds
+- Completed reload, in  1.504 seconds
 Domain Reload Profiling:
-	ReloadAssembly (981ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (1505ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (812ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1239ms)
+			LoadAssemblies (105ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (243ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (582ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (813ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (498ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (668ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1729 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (21.9 KB). Loaded Objects now: 2195.
-Memory consumption went from 74.9 MB to 74.9 MB.
-Total: 2.070600 ms (FindLiveObjects: 0.150300 ms CreateObjectMapping: 0.038000 ms MarkObjects: 1.860800 ms  DeleteObjects: 0.020600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002069 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001B4BB3B9C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B908E2F0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB3B9C20 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BA8D0020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BED33040 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8E116B0 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B87B0040 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BE2AA670 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BC44D000 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB42E630 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BB42E630 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.Toolchain.Linux-x86_64.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BE2AA670 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BADEC020 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4BEC53630 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001B4B8C58480 doesn't match image C:\Users\nikik\Documents\GitHub\Ros2RhinoUnity\Ros2RhinoUnity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1009ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (837ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (141ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (594ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (510ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1729 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (21.9 KB). Loaded Objects now: 2198.
-Memory consumption went from 74.9 MB to 74.9 MB.
-Total: 1.862400 ms (FindLiveObjects: 0.091300 ms CreateObjectMapping: 0.026900 ms MarkObjects: 1.722700 ms  DeleteObjects: 0.020500 ms)
+Unloading 1736 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (21.9 KB). Loaded Objects now: 2203.
+Memory consumption went from 75.2 MB to 75.2 MB.
+Total: 3.337400 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.054000 ms MarkObjects: 3.094400 ms  DeleteObjects: 0.026600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
